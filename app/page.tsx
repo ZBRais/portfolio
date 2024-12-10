@@ -1,22 +1,18 @@
-import Grid from "@/components/Grid";
+import Header from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import ThemeSwitch from "@/components/ThemeSwitch";
-import { FloatingNav } from "@/components/ui/FloatingNav";
-import { FaHome } from "react-icons/fa";
+import Skill from "@/components/Skill";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
-        <FloatingNav navItems={[
-          {name: 'Home', link: '/', icon: <FaHome />},
-        ]} />
-        <Hero />
+    <>
+      <div className="relative flex justify-center items-center overflow-hidden flex-col mx-auto bg-white dark:bg-black-100 dark:bg-dot-white/[0.03] bg-dot-black-100/[0.2]">
+        <Header />
+        <main>
+          {/* Hero */}
+          <Hero />
+          <Skill />
+        </main>
       </div>
-      {/* <div>
-        <Grid />
-      </div> */}
-      
-    </main>
+    </>
   );
 }

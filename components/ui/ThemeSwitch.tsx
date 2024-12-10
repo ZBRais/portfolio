@@ -9,7 +9,7 @@ export default function ThemeSwitch() {
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+  }, []); //empty depencies causes to run the useEffect only on mount
 
   if (!mounted) {
     return null; // Ensure the component only renders on the client
@@ -33,7 +33,7 @@ export default function ThemeSwitch() {
   return (
     <button
       onClick={toggleTheme}
-      className="px-4 py-2 text-gray-800 dark:text-gray-200 rounded-full"
+      className="px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-full"
     >
       {currentTheme === 'dark' ? '🌙' : '☀️'}
     </button>
