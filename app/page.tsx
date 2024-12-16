@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import Skill from "@/components/Skill";
+import { Testimonials } from "@/components/Testimonials";
+
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
           {/* Hero */}
           <Hero />
           <Skill />
+          <Testimonials />
+
         </main>
       </div>
     </>
