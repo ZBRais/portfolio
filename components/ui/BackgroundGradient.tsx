@@ -2,7 +2,7 @@ import { cn } from "@/utils/cn";
 import React from "react";
 import { motion } from "framer-motion";
 
-export const BackgroundGradient = ({
+const BackgroundGradient = ({
   children,
   className,
   containerClassName,
@@ -23,6 +23,7 @@ export const BackgroundGradient = ({
   };
   return (
     <div className={cn("relative p-[4px] group", containerClassName)}>
+      console.log("Loaded");
       <motion.div
         variants={animate ? variants : undefined}
         initial={animate ? "initial" : undefined}
@@ -70,3 +71,5 @@ export const BackgroundGradient = ({
     </div>
   );
 };
+
+export default BackgroundGradient;

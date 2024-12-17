@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import Projects from "@/components/Projects";
 import Skill from "@/components/Skill";
 import { Testimonials } from "@/components/Testimonials";
 
@@ -14,6 +15,7 @@ export default function Home() {
           <Hero />
           <Skill />
           <Testimonials />
+          <Projects />
 
         </main>
       </div>

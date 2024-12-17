@@ -2,7 +2,7 @@
 
 import { cn } from "@/utils/cn";
 import React, { useEffect, useState } from "react";
-import { BackgroundGradient } from "@/components/ui/BackgroundGradient";
+import BackgroundGradient from "@/components/ui/BackgroundGradient";
 
 export const InfiniteMovingCards = ({
     items,
